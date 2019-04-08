@@ -1,3 +1,0 @@
-[submodule "modules/terraform-aws-route53-alias-1"]
-	path = modules/terraform-aws-route53-alias-1
-	url = https://github.com/cloudposse/terraform-aws-route53-alias
