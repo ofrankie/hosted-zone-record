@@ -8,7 +8,7 @@ data "aws_route53_zone" "selected" {
 }
 
 module "terraform-aws-route53-alias" {
-  source          = "./modules/terraform-aws-route53-alias"
+  source          = "./modules/terraform-aws-route53-alias-1"
   aliases         = ["dev.${data.aws_route53_zone.selected.name}"]
   parent_zone_id  = "${data.aws_route53_zone.selected.zone_id}"
   target_dns_name = "d1cmjnum02mk9e.cloudfront.net"
